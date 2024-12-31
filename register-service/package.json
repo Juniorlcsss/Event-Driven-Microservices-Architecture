@@ -1,0 +1,16 @@
+{
+  "name": "event-driven-microservices-architecture",
+  "version": "1.0.0",
+  "description": "Objective:\r Building a scalable event driven microservices architecure for a hypothetical booking system\r which can handle high volumes of transactions and provide real time updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Randall",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}
