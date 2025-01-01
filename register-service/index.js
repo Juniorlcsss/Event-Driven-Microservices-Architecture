@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 //connect to rabbitmq
 async function connect_rabbitmq(){
-    const connection = await amqp.connect('amqp://localhost:5672');
+    const connection = await amqp.connect('amqp://localhost');
     const channel = await connection.createChannel();
     channel.assertQueue('task_queue', { durable: false });
     console.log("Connected to RabbitMQ");
